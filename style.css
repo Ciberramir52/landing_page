@@ -1,0 +1,39 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar, .hero {
+    display: flex;
+    align-items: center;
+    background-color: #1F2937;
+    color: white;
+}
+
+.navbar {
+    padding: 12px;
+}
+
+.header-logo, .header-links {
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header-logo {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.header-links {
+    gap: 20px;
+}
+
+.header-link a {
+    text-decoration: none;
+    color: white;
+}
