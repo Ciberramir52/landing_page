@@ -6,7 +6,7 @@ body {
     flex-direction: column;
 }
 
-.navbar, .hero {
+.navbar, .hero, .hero-content {
     display: flex;
     align-items: center;
     background-color: #1F2937;
@@ -20,12 +20,14 @@ body {
 .header-logo, .header-links {
     margin: 0;
     flex-grow: 1;
+    flex-basis: 50%;
     display: flex;
     justify-content: center;
 }
 
 .header-logo {
-    font-size: 32px;
+    font-size: 24px;
+    color: #F9FAF8;
     font-weight: 700;
 }
 
@@ -34,6 +36,52 @@ body {
 }
 
 .header-link a {
+    font-size: 18px;
+    color: #E5E7EB;
     text-decoration: none;
+}
+
+.hero {
+    justify-content: center;
+    padding: 100px 0px;
+}
+
+.hero-content {
+    flex-basis: 55%;
+}
+
+.website-info, .hero-image {
+    margin: 0;
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+.website-info h1 {
+    margin: 0;
+    color: #F9FAF8;
+    font-size: 48px;
+}
+
+.website-info p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.hero-image {
+    height: 100%;
+    text-align: center;
+    background-color: grey;
+}
+
+.website-info button {
+    font-size: 14px;
+    font-weight: 700;
+    background-color: cornflowerblue;
+    padding: 7px 35px;
+    border-radius: 6px;
     color: white;
+    border: none;
+    text-align: center;
 }
