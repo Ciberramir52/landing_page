@@ -8,7 +8,7 @@ body {
 
 .navbar, .hero, .hero-content {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     background-color: #1F2937;
     color: white;
 }
@@ -70,9 +70,16 @@ body {
 }
 
 .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    text-align: center;
     background-color: grey;
+}
+
+.hero-image-child {
+    flex: 1;
+    text-align: center;
 }
 
 .website-info button {
@@ -106,6 +113,7 @@ body {
     margin: 36px auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 45px;
 }
 
@@ -161,7 +169,7 @@ body {
 
 .action-container {
     margin: 80px auto;
-    padding: 40px 0px;
+    padding: 40px 10px;
     color: white;
     width: 60%;
     background-color: #3882F6;
